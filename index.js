@@ -4,8 +4,8 @@ const { Poru } = require('poru');
 const {Spotify} = require("poru-spotify");
 
 let spotify = new Spotify({
-  clientID:"PUT HERE",
-  clientSecret:"PUT HERE"
+  clientID:"1cde456e3b0247ec9b027752e311d5a8",
+  clientSecret:"1cde456e3b0247ec9b027752e311d5a8"
 })
 
 
@@ -25,7 +25,7 @@ const client = new Client({
 client.config = require('./config.json');
 client.poru = new Poru(client, client.config.nodes, {
  library:"discord.js",
- defaultPlatform: "ytsearch",
+ defaultPlatform: "youtube",
  plugins: [spotify]
 });
 client.commands = new Collection();
@@ -36,4 +36,4 @@ client.slashCommands = new Collection();
   require(`./handlers/${handler}`)(client);
 });
 
-client.login(process.env.TOKEN);
+client.login(client.config.token);

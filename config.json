@@ -1,19 +1,21 @@
 {
-  "prefix": "?",
-  "ownerIds": [
-    "433227453637328897",
-    "445531846118211588",
-    "580381333914648579",
-    "857958962904694836",
-    "567704764813541376"
-  ],
-  "nodes": [
-    {
-      "name": "Localhost",
-    "host": "IP",
-    "port":8080,
-    "password": "youshallnotpass",
-    "secure":false 
-  }
-  ]
-}
+  "token" : "MTA5NzQzNTIzMzg4NTkwMDgxMQ.GPGqIW.UDy9bgoUWBE8NOxK2sUiTQTNN8RJLQT7noE4Ok",
+   "prefix": "?",
+   "ownerIds": [
+     "433227453637328897",
+     "445531846118211588",
+     "580381333914648579",
+     "857958962904694836",
+     "567704764813541376"
+   ],
+   "nodes": [
+         {
+             "name": "NODE_1",
+             "host": "dono-04.danbot.host",
+             "port": 1491,
+             "password": "youshallnotpass",
+             "secure": false
+           }
+   ]
+ }
+ 

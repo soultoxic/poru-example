@@ -11,8 +11,8 @@ module.exports = {
       deaf:true
     });
 
-    const resolve = await client.poru.resolve({query:args.join(" "),source:"ytsearch",requester:message.author});
-    const { loadType, tracks, playlistInfo } = resolve;
+    const res = await client.poru.resolve({query:args.join(" "),source:"youtube",requester:message.author});
+    const { loadType, tracks, playlistInfo } = res;
 
     if (loadType === 'PLAYLIST_LOADED') {
       for (const track of resolve.tracks) {
